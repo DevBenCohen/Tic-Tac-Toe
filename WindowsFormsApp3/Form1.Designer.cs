@@ -98,7 +98,7 @@
             // 
             this.M3.AccessibleName = "M3";
             this.M3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.M3.Location = new System.Drawing.Point(179, 93);
+            this.M3.Location = new System.Drawing.Point(174, 93);
             this.M3.Name = "M3";
             this.M3.Size = new System.Drawing.Size(75, 75);
             this.M3.TabIndex = 5;
