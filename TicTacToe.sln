@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp3", "WindowsFormsApp3\WindowsFormsApp3.csproj", "{850C4F1E-9D64-45B6-8F92-41802AAF600A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "WindowsFormsApp3\TicTacToe.csproj", "{850C4F1E-9D64-45B6-8F92-41802AAF600A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

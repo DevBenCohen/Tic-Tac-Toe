@@ -12,6 +12,7 @@ namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
+        bool winner = false;
         bool turn = true;
         int turn_count = 0;
         public Form1()
@@ -30,13 +31,16 @@ namespace WindowsFormsApp3
             computer_Move();
         }
 
-        private void Click(Button btn)
+        private void preforme_Click(Button btn)
         {
-            btn.Text = "O";
-            btn.Enabled = false;
-            this.turn_count++;
-            this.turn = !this.turn;
-            check_Winner();
+            if (!this.winner)
+            {
+                btn.Text = "O";
+                btn.Enabled = false;
+                this.turn_count++;
+                this.turn = !this.turn;
+                check_Winner();
+            }
         }
 
 
@@ -56,14 +60,19 @@ namespace WindowsFormsApp3
                 {
                     move = find_Corner();
                     if (move == null)
+                    {
                         move = open_Space();
+                    }
                 }
             }
-            Click(move);
+            if ((T1.Text == "X") && (M2.Enabled) || (T3.Text == "X") && (M2.Enabled) || (B1.Text == "X") && (M2.Enabled) || (B3.Text == "X") && (M2.Enabled))
+                move = M2;
+            preforme_Click(move);
         }
 
         private Button win_or_block(string sign)
-        { 
+        {
+            Console.WriteLine("Checking");
             //Horizontal Check
             if ((T1.Text == sign) && (T2.Text == sign) && (T3.Text == ""))
                 return T3;
@@ -121,6 +130,7 @@ namespace WindowsFormsApp3
 
         private Button find_Corner()
         {
+            Console.WriteLine("In corner");
             if (T1.Text == "O")
             {
                 if (T3.Text == "")
@@ -170,6 +180,7 @@ namespace WindowsFormsApp3
 
         private Button open_Space()
         {
+            Console.WriteLine("In open space");
             Button btn = null;
             foreach (Control c in Controls)
             {
@@ -187,24 +198,23 @@ namespace WindowsFormsApp3
 
         private void check_Winner()
         {
-            bool winner = false;
             if ((T1.Text == T2.Text) && (T2.Text == T3.Text) && (!T1.Enabled)) 
-                winner = true;
-            if ((M1.Text == M2.Text) && (M2.Text == T3.Text) && (!M1.Enabled))
-                winner = true;
+                this.winner = true;
+            if ((M1.Text == M2.Text) && (M2.Text == M3.Text) && (!M1.Enabled))
+                this.winner = true;
             if ((B1.Text == B2.Text) && (B2.Text == B3.Text) && (!B1.Enabled))
-                winner = true;
+                this.winner = true;
             if ((T1.Text == M1.Text) && (M1.Text == B1.Text) && (!T1.Enabled))
-                winner = true;
+                this.winner = true;
             if ((T2.Text == M2.Text) && (M2.Text == B2.Text) && (!T2.Enabled))
-                winner = true;
+                this.winner = true;
             if ((T3.Text == M3.Text) && (M3.Text == B3.Text) && (!T3.Enabled))
-                winner = true;
+                this.winner = true;
             if ((T1.Text == M2.Text) && (M2.Text == B3.Text) && (!T1.Enabled))
-                winner = true;
+                this.winner = true;
             if ((T3.Text == M2.Text) && (M2.Text == B1.Text) && (!T3.Enabled))
-                winner = true;
-            if (winner)
+                this.winner = true;
+            if (this.winner)
             {
                 disable_buttons();
                 string win = "";
@@ -230,5 +240,6 @@ namespace WindowsFormsApp3
                 btn.Enabled = false;
             }
         }
+        
     }
 }

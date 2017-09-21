@@ -43,7 +43,7 @@
             // 
             this.T1.AccessibleName = "T1";
             this.T1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.T1.Location = new System.Drawing.Point(12, 12);
+            this.T1.Location = new System.Drawing.Point(12, 27);
             this.T1.Name = "T1";
             this.T1.Size = new System.Drawing.Size(75, 75);
             this.T1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             this.T2.AccessibleName = "T2";
             this.T2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.T2.Location = new System.Drawing.Point(93, 12);
+            this.T2.Location = new System.Drawing.Point(93, 27);
             this.T2.Name = "T2";
             this.T2.Size = new System.Drawing.Size(75, 75);
             this.T2.TabIndex = 1;
@@ -65,7 +65,7 @@
             // 
             this.T3.AccessibleName = "T3";
             this.T3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.T3.Location = new System.Drawing.Point(174, 12);
+            this.T3.Location = new System.Drawing.Point(174, 27);
             this.T3.Name = "T3";
             this.T3.Size = new System.Drawing.Size(75, 75);
             this.T3.TabIndex = 2;
@@ -76,7 +76,7 @@
             // 
             this.M1.AccessibleName = "M1";
             this.M1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.M1.Location = new System.Drawing.Point(12, 93);
+            this.M1.Location = new System.Drawing.Point(12, 108);
             this.M1.Name = "M1";
             this.M1.Size = new System.Drawing.Size(75, 75);
             this.M1.TabIndex = 3;
@@ -87,7 +87,7 @@
             // 
             this.M2.AccessibleName = "M2";
             this.M2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.M2.Location = new System.Drawing.Point(93, 93);
+            this.M2.Location = new System.Drawing.Point(93, 108);
             this.M2.Name = "M2";
             this.M2.Size = new System.Drawing.Size(75, 75);
             this.M2.TabIndex = 4;
@@ -98,7 +98,7 @@
             // 
             this.M3.AccessibleName = "M3";
             this.M3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.M3.Location = new System.Drawing.Point(174, 93);
+            this.M3.Location = new System.Drawing.Point(174, 108);
             this.M3.Name = "M3";
             this.M3.Size = new System.Drawing.Size(75, 75);
             this.M3.TabIndex = 5;
@@ -109,7 +109,7 @@
             // 
             this.B1.AccessibleName = "B1";
             this.B1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B1.Location = new System.Drawing.Point(12, 174);
+            this.B1.Location = new System.Drawing.Point(12, 189);
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(75, 75);
             this.B1.TabIndex = 6;
@@ -120,7 +120,7 @@
             // 
             this.B2.AccessibleName = "B2";
             this.B2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B2.Location = new System.Drawing.Point(93, 174);
+            this.B2.Location = new System.Drawing.Point(93, 189);
             this.B2.Name = "B2";
             this.B2.Size = new System.Drawing.Size(75, 75);
             this.B2.TabIndex = 7;
@@ -131,7 +131,7 @@
             // 
             this.B3.AccessibleName = "B3";
             this.B3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B3.Location = new System.Drawing.Point(174, 174);
+            this.B3.Location = new System.Drawing.Point(174, 189);
             this.B3.Name = "B3";
             this.B3.Size = new System.Drawing.Size(75, 75);
             this.B3.TabIndex = 8;
@@ -142,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(266, 267);
+            this.ClientSize = new System.Drawing.Size(269, 280);
             this.Controls.Add(this.B3);
             this.Controls.Add(this.B2);
             this.Controls.Add(this.B1);
