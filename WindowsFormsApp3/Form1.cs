@@ -15,9 +15,19 @@ namespace WindowsFormsApp3
         bool winner = false;
         bool turn = true;
         int turn_count = 0;
+        private Button[] btnArr = new Button[9];
         public Form1()
         {
             InitializeComponent();
+            this.btnArr[0] = T1;
+            this.btnArr[1] = T2;
+            this.btnArr[2] = T3;
+            this.btnArr[3] = M1;
+            this.btnArr[4] = M2;
+            this.btnArr[5] = M3;
+            this.btnArr[6] = B1;
+            this.btnArr[7] = B2;
+            this.btnArr[8] = B3;
         }
 
         private void button_Click(object sender, EventArgs e)
@@ -223,6 +233,7 @@ namespace WindowsFormsApp3
                 else
                     win = "X";
                 MessageBox.Show(win + " Won!", "Score");
+                this.winner = false;
             }
             else if (this.turn_count == 9)
             {
@@ -234,12 +245,34 @@ namespace WindowsFormsApp3
 
         private void disable_buttons()
         {
-            foreach (Control c in Controls)
+            for (int i = 0; i < this.btnArr.Length; i++)
             {
-                Button btn = c as Button;
-                btn.Enabled = false;
+                this.btnArr[i].Enabled = false;
             }
         }
-        
+
+        private void PC_Click(object sender, EventArgs e)
+        {
+            this.turn_count = 0;
+            this.turn = false;
+            for (int i =0; i < this.btnArr.Length; i++)
+            {
+                this.btnArr[i].Text = "";
+                this.btnArr[i].Enabled = true;
+            }
+            computer_Move();
+        }
+
+        private void Player_Click(object sender, EventArgs e)
+        {
+            this.turn_count = 0;
+            this.turn = true;
+            for (int i = 0; i < this.btnArr.Length; i++)
+            {
+                this.btnArr[i].Text = "";
+                this.btnArr[i].Enabled = true;
+            }
+
+        }
     }
 }
